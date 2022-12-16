@@ -4,12 +4,16 @@
   "description": "",
   "main": "app.js",
   "scripts": {
-    "start": "nodemon app.js",
+    "start": "node app.js",
+    "dev": "nodemon -L app.js",
     "test": "echo \"Error: no test specified\" && exit 1",
     "sever": "nodemon app.js"
   },
   "keywords": [],
-  "author": "",
+  "author": "Kasoma Ibrahim",
+  "engines": {
+    "node": ">= 12.0.0"
+  },
   "license": "ISC",
   "dependencies": {
     "@google-cloud/storage": "^6.6.0",
@@ -33,5 +37,8 @@
     "pg-hstore": "^2.3.4",
     "sequelize": "^6.25.3",
     "sequelize-cli": "^6.5.2"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.19"
   }
 }
