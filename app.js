@@ -63,7 +63,7 @@ app.use((err, req, res, next) => {
 });
 
 // set our port
-app.set("port", process.env.PORT || 8080);
+app.set("port", process.env.DB_PORT || 8080);
 
 // Test the database connection
 (async () => {
