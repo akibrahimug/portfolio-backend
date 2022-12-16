@@ -27,7 +27,7 @@ app.use(
     credentials: true,
   })
 );
-app.use(express.session({ secret: "cess and Ezra" }));
+app.use(session({ secret: "cess and Ezra" }));
 app.use("/pictures", picRoutes);
 app.use("/api", routes);
 
