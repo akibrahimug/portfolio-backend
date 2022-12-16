@@ -10,6 +10,7 @@ const path = require("path");
 const picRoutes = require("./routes/picRoutes");
 const logger = require("morgan");
 const passport = require("passport");
+const session = require("express-session");
 
 // variable to enable global error logging
 const enableGlobalErrorLogging =
@@ -26,7 +27,7 @@ app.use(
     credentials: true,
   })
 );
-
+app.use(express.session({ secret: "cess and Ezra" }));
 app.use("/pictures", picRoutes);
 app.use("/api", routes);
 
